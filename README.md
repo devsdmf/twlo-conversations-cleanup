@@ -73,6 +73,8 @@ $ node clear-old-conversations.js --chat-service-sid=ISXXXXXXXXXXXXXXXXXXXXXXXXX
 
 In order to get the Chat Service SID you should go to your Twilio account's [Conversation](https://www.twilio.com/console/conversations/services) console, and there are your chat services with their SID's (inside the red box on the image below).
 
+![Screen Shot 2021-06-23 at 16 48 32](https://user-images.githubusercontent.com/1649565/123160591-c604cc80-d444-11eb-8d28-08bbb79830ad.png)
+
 ## Disclaimers
 
 - Be careful while using this script, it will make permant changes on your Twilio account and conversations. Me (Lucas) and Twilio bears no responsibility for a mis-usage of this software, make sure to test it on a development/stage environment before actually taking it to a production application.
