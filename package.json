@@ -1,0 +1,29 @@
+{
+  "name": "twlo-conversations-cleanup",
+  "version": "1.0.0",
+  "description": "A housekeeping script to clean-up old conversations on Twilio platform.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsdmf/twlo-conversations-cleanup.git"
+  },
+  "keywords": [
+    "twilio",
+    "api",
+    "communications-platform"
+  ],
+  "author": "Lucas Mendes (lmendes@twilio.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devsdmf/twlo-conversations-cleanup/issues"
+  },
+  "homepage": "https://github.com/devsdmf/twlo-conversations-cleanup#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "twilio": "^3.64.0",
+    "yargs": "^17.0.1"
+  }
+}
