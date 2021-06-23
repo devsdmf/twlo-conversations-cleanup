@@ -32,7 +32,7 @@ show_help()
     echo
     echo "Twilio :: Conversations Clean-Up Script"
     echo
-    echo "Syntax: ./clear-old-conversations.sh {chat-service-sid} {from-date}"
+    echo "Syntax: $0 {chat-service-sid} {from-date}"
     echo
     echo "arguments:"
     echo "\t{chat-service-sid}\tthe chat service ID to query conversations, i.e. ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
