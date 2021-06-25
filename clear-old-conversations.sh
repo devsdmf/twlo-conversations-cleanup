@@ -74,8 +74,8 @@ FROM_DATE="${2}"
 
 echo "Fetching conversations using Twilio CLI for chat service ${CHAT_SERVICE_ID} older than ${FROM_DATE}... \c"
 CONVERSATIONS=$(twilio api:conversations:v1:services:conversations:list --chat-service-sid=$CHAT_SERVICE_ID -o json \
-    | jq --raw-output --arg f $FROM_DATE 'map({ sid, dateCreated, dateUpdated, friendlyName, attributes: .attributes | fromjson }) |
-    map(select(((.dateUpdated[:19] | .+"Z") | . < $f) and (.attributes.status == "INACTIVE") and (.attributes.long_lived == true))) |
+    | jq --raw-output --arg f $FROM_DATE 'map({ sid, dateCreated, dateUpdated, friendlyName }) |
+    map(select(((.dateUpdated[:19] | .+"Z") | . < $f))) |
     map(.sid) | join(" ")')
 CONVERSATIONS_ARR=( $CONVERSATIONS )
 echo "done!"
